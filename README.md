@@ -1,48 +1,56 @@
-# Introdução ao React
+# Aula 02 - Configurando o Ambiente de Desenvolvimento
 
-### Desenvolvimento WEB
+> Olá, seja bem vindo a mais uma aula do curso de React aqui da Tec Dojo
 
-- Desenvolvimento de aplicações e sistemas que rodam na WEB, sistemas que podem ser acessados por browser, esse desenvolvimento é dividido em duas camadas principais, o forntend e o backend;
-- Front-end responsável pela criação das Telas, das Interfaces Digitais Interativas;
-- Back-end responsável pela manipulação e armazenamento de dados, regras de negócio, etc;
+Na aula passada vimos a teoria do que é o react e como ele funciona! Na aula de hoje vamo ver como configurar o ambiente de desenvolvimento, tudo que precisa para que possamos utilizar o react e começar a desenvolver nossas aplicações.
+> 
 
-### Front-end
+## 1. Node
 
-- A Base para todo o Front-end concentra-se em três tecnologias: HTML, CSS e JS;
-- Atualmente existem diversas bilbiotecas e frameworks para o front-end, esses frameworks facilitam, otimizam e possibilitam maior escalabilidade ao processo de desenvolvimento;
+É um software que permite a execução de códigos JavaScript fora de um navegador web. É através do node que a gente vai poder utilizar o javascript e várias bibliotecas na nossa máquina local, incluindo o react que é uma bilbioteca também. O node é o coração do ambiente de desenvolvimento.
 
-### React
+### Você já tem o node?
 
-- O React é uma bilbioteca JS voltada para o desenvolvimento front-end ela visa facilitar, otimizar e escalar o desenvolvimento;
-- A biblioteca foi criada em 2013 pelo Facebook;
-- Facebook, AirBnb, Instagram, Twitter, Netflix, etc;
-- Muito popular e muito usada;
+Para verificar se você já tem o node instalado na sua máquina basta você ir no prompt de comando:
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/84690a93-767f-46ce-9ba9-cfbe6f5ef0a1/b718932b-1d10-4892-9e5f-83349e184c5a/Untitled.png)
+```bash
+node -v
+```
 
-### Como o React Funciona?
+Se retornar o número da versão é porque já está instalado
 
-- O React em três conceitos fundamentais Layout Componentizado, SPA e Reatividade;
+### Instalando o node
 
-**Layout Componentizado:** 
+Caso não esteja instalado, é só baixar, é bem simples:
 
-- Um Componente é uma estrutura básica de algum elemento visual da interface, esse componente possui uma estrutura, um estilo e configurações ou funcionalidades próprias;
-- Uma navbar pode ser um componente, assim como um parágrafo, um botão, etc.
-- O layout não é mais pensado como um todo mas como um conjunto de componentes;
+1. Vá ao site do node  
 
-******SPA - Single Page Application:******
+[Node.js](https://nodejs.org/en)
 
-- O React trabalha com o conceito de SPA (Single Page Application);
-- Você possui uma única página e conforme o usuário vai interagindo os componentes presentes nessa página vão se alterando dinamicamente;
-- Assim, é possível ter a ideia de diferentes páginas apenas alterando os componentes;
+1. Clina na versão LTS
 
-**********************Reatividade**********************
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/84690a93-767f-46ce-9ba9-cfbe6f5ef0a1/0f0f6c6b-9fde-4579-b161-aa3e569c50b3/Untitled.png)
 
-- O React opera com o conceito de reatividade, centrado no estado. Quando um usuário interage com a interface, o estado, representando os dados locais, é modificado. Os componentes vinculados a esse estado ou dados (UI) são então atualizados automaticamente.
-- Imaginemos uma tela composta por três elementos: um título, um valor numérico e um botão. Cada vez que o botão é pressionado, o estado do valor (uma variável) é incrementado em 1. Como o valor numérico é um componente dependente do estado, ele é atualizado sempre que o estado é modificado. Essa relação pode parecer óbvia, mas é fundamental ressaltar essa dinâmica (EVENTO ⇒ ESTADO ⇒ UI), pois ela se tornará significativa no desenvolvimento futuro.
+1. Após baixado clique no instalador
 
-# Referências
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/84690a93-767f-46ce-9ba9-cfbe6f5ef0a1/888c0b7b-155b-4b9f-a623-584d3dff0652/Untitled.png)
 
-[Introdução ao React](https://medium.com/desenvolvimento-com-react/introducao-react-5586592487d2)
+1. Seguir o Wizzard de instalação
 
-[Iniciando com React - Introdução](https://medium.com/@viniciusdacal/iniciando-com-react-parte-1-a79d74fe8f8c)
+## 2. Editor de Código
+
+Você pode usar um editor de código de sua preferência, eu aconselho utilizar o VSCode, pela facilidade de uso e grande quantidade de extensões e plug-ins que ajudam bastante na hora de codar.
+
+Para baixar o VSCode é só acessar o site oficial:
+
+[](https://code.visualstudio.com/)
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/84690a93-767f-46ce-9ba9-cfbe6f5ef0a1/6495e684-199c-42ac-82c7-1f0da3a540ef/Untitled.png)
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/84690a93-767f-46ce-9ba9-cfbe6f5ef0a1/46e316a9-6bbf-46d3-8907-ab78873fbd17/Untitled.png)
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/84690a93-767f-46ce-9ba9-cfbe6f5ef0a1/11fdaeee-344a-4c91-8252-0a938ba14a7c/Untitled.png)
+
+## Pronto 🎉
+
+Sua máquina está pronta para começar a desenvolver um projeto em React!
