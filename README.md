@@ -1,7 +1,9 @@
 # Curso de React | TecDojo
 
-<img src="https://github.com/joaoVictorBAlves/curso-react-tecdojo/assets/86852231/3b184d6d-03c5-4b11-b117-05a4ed4d3d3f" alt="logo" width="250"/>
-
+<div style="display: flex; justify-content: space-around;">
+    <img src="https://github.com/joaoVictorBAlves/curso-react-tecdojo/assets/86852231/3b184d6d-03c5-4b11-b117-05a4ed4d3d3f" alt="logo 1" width="250"/>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="logo 2" width="180"/>
+</div>
 ---
 
 Este repositório contém materiais e códigos das aulas do curso de React oferecido pelo TecDojo.
