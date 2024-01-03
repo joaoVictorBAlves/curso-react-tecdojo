@@ -29,11 +29,12 @@ Caso não esteja instalado, é só baixar, é bem simples:
 
 1. Clina na versão LTS
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/84690a93-767f-46ce-9ba9-cfbe6f5ef0a1/0f0f6c6b-9fde-4579-b161-aa3e569c50b3/Untitled.png)
+![image](https://github.com/joaoVictorBAlves/curso-react-tecdojo/assets/86852231/31f55f7f-5d12-4168-ad25-d2e88665e346)
+
 
 1. Após baixado clique no instalador
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/84690a93-767f-46ce-9ba9-cfbe6f5ef0a1/888c0b7b-155b-4b9f-a623-584d3dff0652/Untitled.png)
+![image](https://github.com/joaoVictorBAlves/curso-react-tecdojo/assets/86852231/77158a41-b49c-4995-b818-6b9e298d869b)
 
 1. Seguir o Wizzard de instalação
 
@@ -45,11 +46,13 @@ Para baixar o VSCode é só acessar o site oficial:
 
 [](https://code.visualstudio.com/)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/84690a93-767f-46ce-9ba9-cfbe6f5ef0a1/6495e684-199c-42ac-82c7-1f0da3a540ef/Untitled.png)
+![image](https://github.com/joaoVictorBAlves/curso-react-tecdojo/assets/86852231/b2b727be-eaeb-465d-9d99-9eba8eeb7684)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/84690a93-767f-46ce-9ba9-cfbe6f5ef0a1/46e316a9-6bbf-46d3-8907-ab78873fbd17/Untitled.png)
+![image](https://github.com/joaoVictorBAlves/curso-react-tecdojo/assets/86852231/650cafcb-43be-49b1-a9f7-0c35bea78643)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/84690a93-767f-46ce-9ba9-cfbe6f5ef0a1/11fdaeee-344a-4c91-8252-0a938ba14a7c/Untitled.png)
+Uma extensão interessante de se baixar no VSCode é o Simple React Snippets
+
+![image](https://github.com/joaoVictorBAlves/curso-react-tecdojo/assets/86852231/6fd7687b-b0a2-48ea-a45e-7c2a7da5224d)
 
 ## Pronto 🎉
 
