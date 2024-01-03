@@ -1,59 +1,34 @@
-# Aula 02 - Configurando o Ambiente de Desenvolvimento
-
 > Olá, seja bem vindo a mais uma aula do curso de React aqui da Tec Dojo
 
-Na aula passada vimos a teoria do que é o react e como ele funciona! Na aula de hoje vamo ver como configurar o ambiente de desenvolvimento, tudo que precisa para que possamos utilizar o react e começar a desenvolver nossas aplicações.
+E com o nosso ambiente de desenvolvimento pronto, hoje vamos aprender a criar nossos projetos em React, além disso nessa aula eu pretendo te explicar a estrutura de um projeto react, o que a uma primeira vista pode parecer complexo, mas você vai entender que não é tão complicado assim.
 > 
 
-## 1. Node
+# Criando um projeto em React
 
-É um software que permite a execução de códigos JavaScript fora de um navegador web. É através do node que a gente vai poder utilizar o javascript e várias bibliotecas na nossa máquina local, incluindo o react que é uma bilbioteca também. O node é o coração do ambiente de desenvolvimento.
-
-### Você já tem o node?
-
-Para verificar se você já tem o node instalado na sua máquina basta você ir no prompt de comando:
+1. Escolher um local nos arquivos do seu computador pra começar seu projeto
+1. Tendo um local escolhido, abra o seu prompt de comando ou qualquer outro aplicativo de terminal de linha de comando
+1. Digite o comando
 
 ```bash
-node -v
+npx create-react-app nome_do_projeto
 ```
 
-Se retornar o número da versão é porque já está instalado
+E pronto, o seu projeto vai começar a ser criado;
 
-### Instalando o node
+# Entendendo um projeto React
 
-Caso não esteja instalado, é só baixar, é bem simples:
+### Uau que projeto grande?
 
-1. Vá ao site do node  
+Após limpar todos os arquivos desnecessários fica bem menor, não é, agora fica mais fácil entender o que cada arquivo e pasta representa para um projeto em React.
 
-[Node.js](https://nodejs.org/en)
+1. package.json - Define metadados que descrevem o projeto
+1. package-look.json - Define metadados que definem as dependências de bilbiotecas
+1. .gitignore - Define quais arquivos e pastas devem ser ignorados pelo git quando for subir o projeto para um repositório como o github ou gitlab
+1. /node_module - Armazena os arquivs de cada bilbioteca instalada no projeto
+1. /public - Define arquivos públicos do projeto, normalmente utilizado para colocar imagens, fontes e arquivos de uso global;
+1. /src - Onde ficam todos os arquivos relacionados aos componentes React. Nele podemos organizar nossos componentes bem como seus estilos;
+1. index.html - Página básica que possui uma div com a classe “root”
+1. index.js - Define a div root do index como uma um objeto raiz do ReactDOM, ou seja, define que é na div root onde toda a aplicação será renderizada;
+1. App.js - Define o componente App que é renderizado na root;
 
-1. Clina na versão LTS
-
-![image](https://github.com/joaoVictorBAlves/curso-react-tecdojo/assets/86852231/31f55f7f-5d12-4168-ad25-d2e88665e346)
-
-
-1. Após baixado clique no instalador
-
-![image](https://github.com/joaoVictorBAlves/curso-react-tecdojo/assets/86852231/77158a41-b49c-4995-b818-6b9e298d869b)
-
-1. Seguir o Wizzard de instalação
-
-## 2. Editor de Código
-
-Você pode usar um editor de código de sua preferência, eu aconselho utilizar o VSCode, pela facilidade de uso e grande quantidade de extensões e plug-ins que ajudam bastante na hora de codar.
-
-Para baixar o VSCode é só acessar o site oficial:
-
-[](https://code.visualstudio.com/)
-
-![image](https://github.com/joaoVictorBAlves/curso-react-tecdojo/assets/86852231/b2b727be-eaeb-465d-9d99-9eba8eeb7684)
-
-![image](https://github.com/joaoVictorBAlves/curso-react-tecdojo/assets/86852231/650cafcb-43be-49b1-a9f7-0c35bea78643)
-
-Uma extensão interessante de se baixar no VSCode é o Simple React Snippets
-
-![image](https://github.com/joaoVictorBAlves/curso-react-tecdojo/assets/86852231/6fd7687b-b0a2-48ea-a45e-7c2a7da5224d)
-
-## Pronto 🎉
-
-Sua máquina está pronta para começar a desenvolver um projeto em React!
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/84690a93-767f-46ce-9ba9-cfbe6f5ef0a1/488e858d-4d35-4345-98d9-b0b3ca7dceeb/Untitled.png)
