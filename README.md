@@ -1,3 +1,5 @@
+# Aula 03 - Criando um projeto em React
+
 > Olá, seja bem vindo a mais uma aula do curso de React aqui da Tec Dojo
 
 E com o nosso ambiente de desenvolvimento pronto, hoje vamos aprender a criar nossos projetos em React, além disso nessa aula eu pretendo te explicar a estrutura de um projeto react, o que a uma primeira vista pode parecer complexo, mas você vai entender que não é tão complicado assim.
@@ -19,7 +21,13 @@ E pronto, o seu projeto vai começar a ser criado;
 
 ### Uau que projeto grande?
 
+![image](https://github.com/joaoVictorBAlves/curso-react-tecdojo/assets/86852231/81eebf23-af00-4b3f-8901-af9108c5349b)
+
 Após limpar todos os arquivos desnecessários fica bem menor, não é, agora fica mais fácil entender o que cada arquivo e pasta representa para um projeto em React.
+
+![image](https://github.com/joaoVictorBAlves/curso-react-tecdojo/assets/86852231/5a1c3de9-55c8-4a15-a6d3-07a8ed5f3d34)
+
+## O que é cada coisa?
 
 1. package.json - Define metadados que descrevem o projeto
 1. package-look.json - Define metadados que definem as dependências de bilbiotecas
@@ -31,4 +39,6 @@ Após limpar todos os arquivos desnecessários fica bem menor, não é, agora fi
 1. index.js - Define a div root do index como uma um objeto raiz do ReactDOM, ou seja, define que é na div root onde toda a aplicação será renderizada;
 1. App.js - Define o componente App que é renderizado na root;
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/84690a93-767f-46ce-9ba9-cfbe6f5ef0a1/488e858d-4d35-4345-98d9-b0b3ca7dceeb/Untitled.png)
+## Resultado?
+
+![image](https://github.com/joaoVictorBAlves/curso-react-tecdojo/assets/86852231/55cfb118-8ac6-4f53-ab1d-1093e530c3e6)
