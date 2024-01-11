@@ -109,3 +109,29 @@ tbody tr:nth-child(even) {
   background-color: #ecf5ff;
   color: #007bff;
 }
+
+/* Noticia.css */
+
+.noticia {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-top: #0056b3 solid 5px;
+}
+
+.noticia h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.noticia h3 {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.noticia p {
+  font-size: 14px;
+  color: #888;
+}
