@@ -1,157 +1,42 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
+.App {
   font-family: Arial, sans-serif;
-}
-
-.Content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-h1 {
-  font-size: 28px;
-  margin-bottom: 15px;
-}
-
-p {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-ul {
-  list-style-type: square;
-  margin-bottom: 20px;
-}
-
-li {
-  margin-bottom: 20px;
+  width: 700px;
+  margin: 20px auto;
 }
 
 h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
+  color: #333;
 }
 
-form {
-  margin-bottom: 20px;
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-input[type='text'],
-input[type='number'],
-button {
-  padding: 8px;
-  margin-bottom: 10px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  width: 100%;
-  box-sizing: border-box;
+li {
+  margin-bottom: 8px;
 }
 
-button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-/* Estilos para a tabela */
-.table {
+table {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
-th {
-  background-color: #007bff;
-  color: white;
-  font-weight: bold;
+th, td {
+  border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
 }
 
-td {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-tbody tr:nth-child(even) {
+th {
   background-color: #f2f2f2;
 }
 
-/* Estilos para a navbar */
-.navbar {
-  background-color: #007bff;
-  overflow: hidden;
-}
-
-.navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-}
-
-.navbar a:hover {
-  background-color: #ecf5ff;
-  color: #007bff;
-}
-
-/* Noticia.css */
-
-.noticia {
-  display: flex;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
+tbody tr:nth-child(even) {
   background-color: #f9f9f9;
-  border-top: #0056b3 solid 5px;
 }
 
-.imagem {
-  flex: 1;
-  /* Ajusta a largura da imagem para ocupar 1 parte do flex container */
-  margin-right: 20px;
-  /* Espaço entre a imagem e as informações */
-}
-
-.imagem img {
-  width: 100%;
-  /* Garante que a imagem ocupe 100% da largura do contêiner */
-  border-radius: 4px;
-  /* Adiciona borda arredondada à imagem */
-}
-
-.informacoes {
-  flex: 2;
-  /* Ajusta a largura das informações para ocupar 2 partes do flex container */
-}
-
-.noticia h2 {
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.noticia h3 {
-  margin-bottom: 15px;
-  color: #555;
-}
-
-.noticia p {
-  font-size: 14px;
-  color: #888;
+tbody tr:hover {
+  background-color: #e6f7ff;
 }
