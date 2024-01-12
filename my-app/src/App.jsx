@@ -44,9 +44,8 @@ function App() {
 
   const erro = 1;
 
-  // Exemplo de uso
-  var valorAleatorio = generateRandomValue(10, 20);
-  console.log(valorAleatorio);
+  const cores = ["red", "green"];
+  const success = 0;
 
   return (
     <div className="App">
@@ -104,6 +103,11 @@ function App() {
             price={product.price}
           />
         ))}
+
+      <h3>Aplicando condicional nas propriedades</h3>
+      <h4 style={{ color: success === 1 ? cores[1] : cores[0] }}>
+        Resultado foi {success === 1 ? "Sucesso" : "Falha"}
+      </h4>
     </div>
   );
 }
