@@ -40,3 +40,12 @@ tbody tr:nth-child(even) {
 tbody tr:hover {
   background-color: #e6f7ff;
 }
+
+.Erro {
+  color: rgb(118, 37, 37);
+  display: block;
+  font-weight: bold;
+  padding: 10px;
+  background-color: rgb(243, 179, 179);
+  border-radius: 8px;
+}
