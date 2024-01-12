@@ -3,20 +3,24 @@ const Form = () => {
     // Isso impede que o submit faça uma requisição padrão
     e.preventDefault();
     const name = document.getElementById("iName");
-    const age = document.getElementById("iAge");
-    console.log(name.value, age.value);
+    const phone = document.getElementById("iPhone");
+    const email = document.getElementById("iEmail");
+    alert(
+      `Você acabou de solicitar sua inscrição ${name.value}!\nIremos entrar em contato através de seu email ${email.value} ou telefone ${phone.value}`
+    );
   }
 
   return (
     <div>
-      <h3>Formulário</h3>
+      <h3>Solicite a sua inscrição!</h3>
       <form onSubmit={(e) => handleSubmit(e)}>
-        <input id="iName" type="text" placeholder="Escreva seu nome" />
+        <input id="iName" type="text" placeholder="Escreva seu nome" required/>
         <br />
-        <input id="iAge" type="number" placeholder="Digite sua idade" />
+        <input id="iEmail" type="text" placeholder="Escreva seu email" required/>
+        <br />
+        <input id="iPhone" type="number" placeholder="Digite seu telefone" required/>
         <br />
         <br />
-        {/* Por padrão é executado o evento onSubmit */}
         <button>Enviar</button>
       </form>
     </div>

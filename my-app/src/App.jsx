@@ -3,6 +3,9 @@ import Noticia from "./components/Noticia";
 import Navbar from "./components/Navbar";
 import TextBlock from "./components/TextBlock";
 import Form from "./components/Form";
+import Lista from "./components/Lista";
+import Cover from "./components/Cover";
+import Grade from "./components/Grade";
 
 function App() {
   function handleClick01() {
@@ -20,43 +23,45 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <Cover
+        imgPath={
+          "https://static.vecteezy.com/system/resources/previews/000/677/302/original/abstract-technology-banner-background.jpg"
+        }
+      />
       <div className="Content">
-        <div style={{ width: 300 }}>
-          <h3>Botões</h3>
-          {/**
-           * Funções que recebem parâmetro devem se colocadas
-           * entre uma funções anônimas ()=>{} para que não disparem
-           */}
-          <button
-            onClick={() => {
-              alert("Você clicou nesse botão");
-            }}
-          >
-            Alert
-          </button>
-          {/**
-           * Quando não é necessário passar parâmetro pode passar apenas o nome da função
-           * pois assim a função não executa automaticamente, isso vale para qualquer evento
-           */}
-          <button onMouseOver={handleHover01} onClick={handleClick01}>
-            Console.log
-          </button>
-        </div>
-        <div style={{ width: 300 }}>
-          <h3>Escreva</h3>
-          {/**
-           * Nesse exemplo vemos que precisamos passar a referência do evento para recuperar
-           * um valor da do que foi escrito, em alguns casos vamos precisar recuperar informações
-           * do evento, para isso devemos passar o evento para a função (e) => {...}
-           */}
-          <input
-            type="text"
-            placeholder="Escreva algo"
-            onChange={(e) => writeText(e.target.value)}
-          />
-          {/* Tratando eventos de submit */}
-          <Form />
-        </div>
+        <TextBlock
+          titulo={"Redes de Computadores"}
+          paragrafo={
+            "Você já se perguntou como a internet funciona por trás dos panos? Quer mergulhar no fascinante universo das redes de computadores e desvendar os segredos por trás da comunicação digital? Então, o nosso Curso de Redes de Computadores é a sua porta de entrada para essa emocionante jornada tecnológica!"
+          }
+        />
+        <Noticia
+          imgPath={
+            "data:image/jpeg;base64,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"
+          }
+          titulo={"Curso com maior aprovação no MEC"}
+          subtitulo={
+            "O curso de redes recebe a maior nota no MEC pela sua qualidade"
+          }
+          data={"12/12/24"}
+        />
+        <Lista />
+        <Grade />
+        <Noticia
+          imgPath={"https://ber.adv.br/wp-content/uploads/2021/05/curso-geo-obras-1024x683.jpg"}
+          titulo={"As inscrições do curso de redes vão até fevereiro!"}
+          subtitulo={
+            "Não perca a oportunidade de fazer o melhor curso da sua vida!"
+          }
+          data={"20/01/24"}
+        />
+        <TextBlock
+          titulo={"Inscrições Abertas"}
+          paragrafo={
+            "Não perca a chance de se destacar no mundo da tecnologia! As inscrições para o Curso de Redes de Computadores estão abertas. Reserve o seu lugar agora e comece a trilhar o caminho para uma carreira de sucesso em redes de computadores."
+          }
+        />
+        <Form />
       </div>
     </div>
   );
