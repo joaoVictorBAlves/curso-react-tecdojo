@@ -1,8 +1,6 @@
+import AuthAlert from "./AuthAlert";
 import Product from "./Product";
-
-function generateRandomValue(a, b) {
-  return Math.random() * (b - a) + a;
-}
+import UserData from "./UserData";
 
 function App() {
   const frutas = ["Banana", "Maçã", "Limão", "Pera"];
@@ -46,6 +44,8 @@ function App() {
 
   const cores = ["red", "green"];
   const success = 0;
+
+  const autentication = true;
 
   return (
     <div className="App">
@@ -108,6 +108,16 @@ function App() {
       <h4 style={{ color: success === 1 ? cores[1] : cores[0] }}>
         Resultado foi {success === 1 ? "Sucesso" : "Falha"}
       </h4>
+
+      <h3>Condicional ternária em componentes</h3>
+      <h4 style={{ color: autentication ? cores[1] : cores[0] }}>
+        Usuário {success === 1 ? "Autenticado" : "Não autenticado"}
+      </h4>
+      {autentication ? (
+        <UserData name={"João Victor"} email={"joaovba.dev@gmail.com"} phone={"9988776655"}/>
+      ) : (
+        <AuthAlert/>
+      )}
     </div>
   );
 }
