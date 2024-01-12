@@ -1,51 +1,42 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
 .App {
-  font-family: Arial, sans-serif;
-  width: 800px;
-  margin: 20px auto;
+  text-align: center;
 }
 
-h3 {
-  color: #333;
+.Controls {
+  display: flex;
+  align-items: center;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  margin-bottom: 8px;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-th, td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
-}
-
-th {
-  background-color: #f2f2f2;
-}
-
-tbody tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-tbody tr:hover {
-  background-color: #e6f7ff;
-}
-
-.Erro {
-  color: rgb(118, 37, 37);
-  display: block;
+button {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 15px;
+  font-size: 54px;
   font-weight: bold;
-  padding: 10px;
-  background-color: rgb(243, 179, 179);
-  border-radius: 8px;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #1d5579;
+}
+
+.Number {
+  margin: 0 10px;
+  font-size: 200px;
+  font-weight: bold;
+  color: #333333;
 }
