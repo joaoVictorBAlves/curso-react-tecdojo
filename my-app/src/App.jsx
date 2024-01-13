@@ -1,26 +1,30 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import Componente from "./Componente";
 
 const App = () => {
-  const [counter, setCounter] = useState(0);
+  const [estado, setEstado] = useState(false);
+  const meuInputRef = useRef(null);
+  const name = useRef();
+
+  useEffect(() => {
+    meuInputRef.current.focus();
+  }, []);
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    alert("Olá " + name.current.value);
+  }
 
   return (
     <div className="App">
-      <div className="Controls">
-        <button
-          onClick={() => {
-            setCounter(counter - 1);
-          }}
-        >
-          -
-        </button>
-        <div className="Number">{counter}</div>
-        <button
-          onClick={() => {
-            setCounter(counter + 1);
-          }}
-        >
-          +
-        </button>
+      <Componente estado={estado} />
+      <button onClick={() => setEstado(!estado)}>Muda Estado</button>
+      <input ref={meuInputRef} type="text" />
+      <div>
+        <form onSubmit={(e) => handleSubmit(e)}>
+          <input ref={name} type="text" placeholder="Digite seu nome" />
+          <button>Enviar</button>
+        </form>
       </div>
     </div>
   );
