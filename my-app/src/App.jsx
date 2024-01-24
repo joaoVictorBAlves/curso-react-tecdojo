@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import ContactUs from "./pages/ContactUs";
 import Product from "./pages/Product";
+import NotFound from "./pages/NotFound";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
           <Route path="/contact" Component={ContactUs} />
           <Route path="/about" Component={About} />
           <Route path="/product/:id" Component={Product} />
+          <Route path="*" Component={NotFound} />
         </Routes>
       </Router>
     </div>
