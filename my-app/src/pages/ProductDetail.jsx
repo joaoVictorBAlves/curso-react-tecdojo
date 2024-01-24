@@ -1,4 +1,4 @@
-import Product from "../components/Product"
+import { useParams } from "react-router-dom";
 
 const products = [
   {
@@ -35,22 +35,23 @@ const products = [
   },
 ];
 
-const Home = () => {
+const ProductDetail = () => {
+  const { id } = useParams();
+
+  const product = products.find((p) => p.id === parseInt(id));
+
+  if (!product) {
+    return <div>Produto não encontrado.</div>;
+  }
+
   return (
-    <div className="App">
-      <h1>Lista de produtos</h1>
-      {products.map((product) => (
-        <Product
-          key={product.id}
-          id={product.id}
-          imgPath={product.imgPath}
-          name={product.name}
-          price={product.price}
-          qtd={product.qtd}
-        />
-      ))}
+    <div className="ProductDetail">
+      <h1>{product.name}</h1>
+      <img src={product.imgPath} alt={product.name} />
+      <p>Price: {product.price}</p>
+      <p>Quantity: {product.qtd}</p>
     </div>
   );
 };
 
-export default Home;
+export default ProductDetail;

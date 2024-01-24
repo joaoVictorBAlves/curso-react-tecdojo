@@ -1,0 +1,31 @@
+.Produto {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+    width: 200px;
+    display: inline-block;
+}
+
+.buyButton{
+    background: rgb(110, 209, 110);
+    color: black;
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.Produto img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.Produto span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.Produto span:first-child {
+    font-weight: bold;
+}
