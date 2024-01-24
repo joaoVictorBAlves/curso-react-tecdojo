@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import Style from "./Product.module.css";
 
 const Product = ({ imgPath, name, price, qtd }) => {
-  const [isOutOfStock, setIsOutOfStock] = useState(qtd == 0);
   const [quantity, setQuantity] = useState(qtd);
+  const [isOutOfStock, setIsOutStock] = useState(qtd == 0);
 
   useEffect(() => {
     if (quantity == 0) {
-      setIsOutOfStock(true);
+      setIsOutStock(true);
     }
   }, [quantity]);
 
@@ -16,14 +16,12 @@ const Product = ({ imgPath, name, price, qtd }) => {
       <img src={imgPath} alt={name} />
       <span>{name}</span>
       <span>{price}</span>
-      <span>last {quantity} units</span>
+      <span>Last {quantity} units</span>
       {isOutOfStock ? (
         <span className={Style.outOfStockText}>Out of Stock</span>
       ) : (
         <button
-          onClick={() => {
-            setQuantity(quantity - 1);
-          }}
+          onClick={() => setQuantity(quantity - 1)}
           className={Style.buyButton}
         >
           Buy
