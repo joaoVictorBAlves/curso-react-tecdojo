@@ -8,10 +8,14 @@ const App = () => {
   const iUserAge = useRef();
 
   useEffect(() => {
-    const storedUsers = JSON.parse(localStorage.getItem("users"));
-    if (storedUsers) {
-      setUsers(storedUsers);
-    }
+    fetch("http://localhost:5000/pessoas")
+      .then((response) => response.json())
+      .then((data) => {
+        setUsers(data);
+      })
+      .catch((error) => {
+        console.log("Ocorreu um erro na requisição");
+      });
   }, []);
 
   function handleAddUser(e) {
@@ -22,12 +26,22 @@ const App = () => {
     if (name && age) {
       const newUser = { name, age };
       const updatedUsers = [...users, newUser];
-      setUsers(updatedUsers);
-      localStorage.setItem("users", JSON.stringify(updatedUsers));
 
-      // Limpar campos de entrada após adicionar usuário
-      iUserName.current.value = "";
-      iUserAge.current.value = "";
+      fetch("http://localhost:5000/pessoas", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(newUser),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          setUsers(updatedUsers);
+          // Limpar campos de entrada após adicionar usuário
+          iUserName.current.value = "";
+          iUserAge.current.value = "";
+        })
+        .catch((error) => {
+          console.log("Ocorreu um erro na requisição");
+        });
     }
   }
 
