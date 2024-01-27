@@ -1,19 +1,78 @@
-body {
+body,
+html {
     margin: 0;
     padding: 0;
-}
-
-.Navbar{
-    margin-bottom: 50px;
-}
-
-h1, p {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.Cards{
+    height: 100%;
     display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.App {
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 50px;
+    width: fit-content;
+}
+
+.logo img {
+    width: 200px;
+    /* Tamanho ajustável conforme necessário */
+}
+
+.content {
+    margin-top: 20px;
+}
+
+textarea {
+    width: 85%;
+    height: 150px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid orange;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #F15A24;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c1481c;
+}
+
+button:active {
+    background-color: #d75a2d;
+}
+
+select {
+    padding: 8px 10px;
+    margin-right: 20px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+    /* Remove a borda ao redor do elemento quando focado */
+}
+
+select:hover {
+    border-color: #999;
+}
+
+select:focus {
+    border-color: #007bff;
+    /* Muda a cor da borda quando o elemento está focado */
 }
