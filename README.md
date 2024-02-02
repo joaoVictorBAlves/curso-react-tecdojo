@@ -1,17 +1,21 @@
-# Curso de React | TecDojo
+![Group 64](https://github.com/joaoVictorBAlves/curso-react-tecdojo/assets/86852231/2172c753-9787-4736-a5ac-c5bb1b54e43d)
 
-<div style="display: flex; justify-content: space-around;">
-    <img src="https://github.com/joaoVictorBAlves/curso-react-tecdojo/assets/86852231/3b184d6d-03c5-4b11-b117-05a4ed4d3d3f" alt="logo 1" width="250"/>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="logo 2" width="180"/>
-</div>
-
----
-
-Este repositório contém materiais e códigos das aulas do curso de React oferecido pelo TecDojo.
+Bem-vindo ao repositório do curso de React oferecido pelo TecDojo. Aqui você encontrará materiais e códigos das aulas para auxiliá-lo no aprendizado da biblioteca ReactJS.
 
 ## Sobre o Curso
-O curso de React oferece uma introdução abrangente e prática ao desenvolvimento web utilizando a biblioteca ReactJS. Aqui, você encontrará os recursos necessários para acompanhar as aulas, incluindo exemplos de código, apresentações e outros materiais de suporte.
+O curso de React oferece uma introdução abrangente e prática ao desenvolvimento web utilizando a biblioteca ReactJS. Abaixo estão os tópicos abordados durante o curso:
+
+- Componentização
+- JSX
+- Hooks
+- React Router
+- Métodos de Persistência
+- Requisições HTTP
+- Material UI
+- Deploy
 
 ### Recursos
 - **Aulas**: Os códigos das aulas estão organizados por branches para facilitar o acompanhamento.
 - **Projetos Práticos**: Desafios e projetos práticos para reforçar os conhecimentos adquiridos.
+
+Para acompanhar as aulas, basta acessar os branches correspondentes aos tópicos específicos que estão sendo abordados.
