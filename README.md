@@ -18,8 +18,6 @@
 - Facebook, AirBnb, Instagram, Twitter, Netflix, etc;
 - Muito popular e muito usada;
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/84690a93-767f-46ce-9ba9-cfbe6f5ef0a1/b718932b-1d10-4892-9e5f-83349e184c5a/Untitled.png)
-
 ### Como o React Funciona?
 
 - O React em três conceitos fundamentais Layout Componentizado, SPA e Reatividade;
