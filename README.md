@@ -1,6 +1,6 @@
 ![Group 64](https://github.com/joaoVictorBAlves/curso-react-tecdojo/assets/86852231/2172c753-9787-4736-a5ac-c5bb1b54e43d)
 
-Bem-vindo ao repositório do curso de React oferecido pelo TecDojo. Aqui você encontrará materiais e códigos das aulas para auxiliá-lo no aprendizado da biblioteca ReactJS.
+Bem-vindo ao repositório do curso de React oferecido pelo TechDojo. Aqui você encontrará materiais e códigos das aulas para auxiliá-lo no aprendizado da biblioteca ReactJS.
 
 ## Sobre o Curso
 O curso de React oferece uma introdução abrangente e prática ao desenvolvimento web utilizando a biblioteca ReactJS. Abaixo estão os tópicos abordados durante o curso:
